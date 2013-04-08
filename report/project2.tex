@@ -60,7 +60,7 @@ To make use of this, we implement neighbor cells\footnote{Neighbor cells are gen
 
 \subsection{Fixed atoms}
 
-To mimic a porous media, we needed to fix some of the atoms in our system. This was done by adding an additional \function{Atom}{isPositionFixed} property to the \class{Atom} class. All atoms with this property set to ``true'' will be skipped by the integrator, and will not be included in force calculations when both atoms are fixed.
+To mimic a porous media, we needed to fix some of the atoms in our system. This was done by adding an additional \function[https://github.com/dragly/molecular-dynamics/blob/master/src/atom.h\#L233]{isPositionFixed} property to the \class[https://github.com/dragly/molecular-dynamics/blob/master/src/atom.h]{Atom} class. All atoms with this property set to ``true'' will be skipped by the integrator, and will not be included in force calculations when both atoms are fixed.
 
 \subsection{Setting up a porous system}
 
